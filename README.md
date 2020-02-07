@@ -1,4 +1,9 @@
 # LibraryServerToServer
+
+### Diagrame de classe
+
+![alt text](http://url/to/img.png)
+
 ### Description du fonctionnement coté client
 
 Le client créé une commande qui est l’objet à traiter. 
