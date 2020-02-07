@@ -2,10 +2,10 @@
 
 ## Informations
 
-Les librairies générées et les executables sont disponible dans le dossier [Released](https://github.com/ffcfalcos/LibraryServerToServer/blob/master/Released)
-ServerTestLibraryServerToServer.exe lance le server sur le port 8888
-ClientTestLibraryServerToServer.exe lance le client qui va appeler le port 8888
-LibraryServerToServer.dll doit etre dans le même dossier que les executables ci dessus
+- Les librairies générées et les executables sont disponible dans le dossier [Released](https://github.com/ffcfalcos/LibraryServerToServer/blob/master/Released)
+- ServerTestLibraryServerToServer.exe lance le server sur le port 8888
+- ClientTestLibraryServerToServer.exe lance le client qui va appeler le port 8888
+- LibraryServerToServer.dll doit etre dans le même dossier que les executables ci dessus
 
 ## Documentation
 
