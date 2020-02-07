@@ -2,7 +2,8 @@
 
 ## Informations
 
-> La librairie générer est disponible dans Released/LibraryServerToServer.dll
+Les librairies générées et les executables sont disponible dans le dossier [Released](https://github.com/ffcfalcos/LibraryServerToServer/blob/master/Released)
+Client
 
 ## Documentation
 
