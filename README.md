@@ -16,24 +16,24 @@
 
 ### Description du fonctionnement coté client
 
-Le client créé une commande qui est l’objet à traiter. 
+Le client créé une commande qui est l’objet à traiter
 ```
 Command command = new Command(commandParameters)
 ```
-Il va ensuite créer un Flux qui est le transporteur de l’objet. 
+Il va ensuite créer un Flux qui est le transporteur de l’objet 
 ```
 Flux flux = new Flux();
 ```
-Avant d’écrire dans le flux, nous le décorons d’une encryptions et d’une compression. 
+Avant d’écrire dans le flux, nous le décorons d’une encryptions et d’une compression
 ```
 CompressionDecorator compressedFlux = new CompressionDecorator(flux);
 EncryptionDecorator encryptedCompressedFlux = new EncryptionDecorator(compressedFlux);
 ```
-Une fois le flux bien créé, nous écrivons l’objet à transporter (dans notre cas la commande sérialisée).
+Une fois le flux bien créé, nous écrivons l’objet à transporter (dans notre cas la commande sérialisée)
 ```
 encryptedCompressedFlux.WriteData(Command.Serialize(command));
 ```
-Enfin, invoquons notre ISender pour envoyer notre flux vers un autre system (Dans notre cas, une communication par socket vers localhost:8888). Le flux reçut est du même objet que le flux envoyé.
+Enfin, invoquons notre ISender pour envoyer notre flux vers un autre system (Dans notre cas, une communication par socket vers localhost:8888). Le flux reçut est du même objet que le flux envoyé
 ```
 List<object> parameters = new List<object>();
 parameters.Add("localhost");
@@ -46,7 +46,7 @@ Console.WriteLine(Encoding.Default.GetString(flux.ReadData()));
 ```
 ### Description du fonctionnement coté server
 
-Le server créé une instance de SocketListener qui va écouter les communications par socket entrante (dans notre cas sur le port 8888). On associe a notre SocketListener un IExecutor ainsi qu’un IAdapter associé à l’IExecutor injecté).
+Le server créé une instance de SocketListener qui va écouter les communications par socket entrante (dans notre cas sur le port 8888). On associe a notre SocketListener un IExecutor ainsi qu’un IAdapter associé à l’IExecutor injecté)
 > On peut utiliser la CDI pour injecter les IAdapter et les IExecutor
 ```
 IExecutor executor = new CommandExecutor();
