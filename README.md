@@ -1,6 +1,10 @@
 # LibraryServerToServer
 
+## Informations
+
 > La librairie générer est disponible dans Released/LibraryServerToServer.dll
+
+## Documentation
 
 ### Diagrame de classe
 
