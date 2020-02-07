@@ -2,7 +2,7 @@
 
 ### Diagrame de classe
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/ffcfalcos/LibraryServerToServer/blob/master/Documentation/Diagrame%20de%20classe.jpg)
 
 ### Description du fonctionnement coté client
 
